@@ -408,13 +408,14 @@ label values gender gender
 ```
 ###### Device
 ```ruby
+rename dispositivo dispositivo_text
 forvalues i = 1(1)1{
 capture drop device
 gen device=.
-replace device=1 if strmatch(dispositivo, "*denador*")>0 | strmatch(dispositivo, "*tatil*")>0 
-replace device=2 if strmatch(dispositivo, "*ablet*")>0
-replace device=3 if strmatch(dispositivo, "*fono*")>0 | strmatch(dispositivo, "*vil*")>0
-replace device=0 if dispositivo!=""&device==.
+replace device=0 if strmatch(dispositivo_text, "*Altre*")>0 
+replace device=1 if strmatch(dispositivo_text, "*rdinador*")>0 | strmatch(dispositivo_text, "*rdenado*")>0 
+replace device=2 if strmatch(dispositivo_text, "*auleta*")>0 | strmatch(dispositivo_text, "*ablet*")>0
+replace device=3 if strmatch(dispositivo_text, "*Telèfon*")>0 | strmatch(dispositivo_text, "*fono*")>0 | strmatch(dispositivo_text, "*vil*")>0
 label define device  0 "Other" 1 "Computer" 2 "Tablet" 3 "Phone" 
 label values device device
 label variable device  "Device used"
