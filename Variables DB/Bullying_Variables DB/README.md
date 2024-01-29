@@ -1,4 +1,4 @@
-```
+```ruby
 split bullying, generate(bu) parse(|) destring
 
 * SELF-REPORTED
