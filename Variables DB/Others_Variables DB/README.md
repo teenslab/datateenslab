@@ -1,5 +1,5 @@
 #### Incluyen las variables: NUTRITION, HONESTY, FTR-BUDAPEST VARIABLES
-'''ruby
+```ruby
 ******* NUTRITION ***********
 
 gen vegetables=.
@@ -101,5 +101,4 @@ label values ftr3 tener
 label variable ftr3 "In 15 years"
 *notes ftr3: "create at SV_dofile_MVR.do by MVR at 20230729"
 } 
-
-'''
+```
