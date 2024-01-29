@@ -1,3 +1,4 @@
+```
 split bullying, generate(bu) parse(|) destring
 
 * SELF-REPORTED
@@ -32,3 +33,4 @@ gen others_bullying=0
 replace others_bullying=1 if n_others_bullying!=0
 
 drop bu1 bu2 bu3 
+```
