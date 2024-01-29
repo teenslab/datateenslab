@@ -134,7 +134,8 @@ df_word5<-df_word5 %>%
 ##### Merging Datasets: The code combines the processed datasets "Ladrillo," "Rope1," and "Rope2" into a single dataset named "df_todas" using the "usuario_id" as the common identifier. This merged dataset is then joined with the original dataset "df" using the "usuario_id."
 
 ##### Data Cleansing: The code cleans the final dataset by handling missing values and converting the "creativityf" variable to the appropriate data type. The code also writes the cleaned dataset to an output file.
-```{r}
+```ruby
+{r}
 df_todas<- merge(x = df_word3, y = df_word4, all=TRUE)
 df_todas<- merge(x = df_todas, y = df_word5, all=TRUE)
 df_todas<-df_todas %>% 
@@ -153,5 +154,4 @@ df_final<-df_final %>%
 write_dta(df_final,"C://D//creativityf_22112023.dta")
 
 #The variable "creativityf" is saved as a string. For its use in Stata: destring creativityf, replace
-```
 ```
