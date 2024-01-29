@@ -130,10 +130,10 @@ df_word5<-df_word5 %>%
   select(usuario_id, study, privacy, dropout, rope2, creativityf)
 
 ```
+#### Comentarios
+##### Merging Datasets: The code combines the processed datasets "Ladrillo," "Rope1," and "Rope2" into a single dataset named "df_todas" using the "usuario_id" as the common identifier. This merged dataset is then joined with the original dataset "df" using the "usuario_id."
 
-#Merging Datasets: The code combines the processed datasets "Ladrillo," "Rope1," and "Rope2" into a single dataset named "df_todas" using the "usuario_id" as the common identifier. This merged dataset is then joined with the original dataset "df" using the "usuario_id."
-
-#Data Cleansing: The code cleans the final dataset by handling missing values and converting the "creativityf" variable to the appropriate data type. The code also writes the cleaned dataset to an output file.
+##### Data Cleansing: The code cleans the final dataset by handling missing values and converting the "creativityf" variable to the appropriate data type. The code also writes the cleaned dataset to an output file.
 ```{r}
 df_todas<- merge(x = df_word3, y = df_word4, all=TRUE)
 df_todas<- merge(x = df_todas, y = df_word5, all=TRUE)
