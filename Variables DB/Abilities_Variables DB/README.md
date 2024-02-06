@@ -1,4 +1,4 @@
-#### Andalucía
+#### First wave (schoolprov= 1-5)
 ```ruby
 rename adivinanzas__padre emily 
 
@@ -105,7 +105,7 @@ lab var finN "Normalized FIN total"
 *notes finN: "create at UB_dofile_MVR.do by MVR at 20230419"
 }
 ```
-#### Cataluña
+#### Second wave (schoolprov= 6)
 ```ruby
 rename emilia adivinanzas__padre 
 rename library adivinanzas__biblioteca 
